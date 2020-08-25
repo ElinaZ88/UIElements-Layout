@@ -26,6 +26,9 @@
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rightDownTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5t-XV-qDh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be0-D3-xw6">
                                 <rect key="frame" x="29" y="508" width="120" height="40"/>
@@ -38,6 +41,9 @@
                                 <state key="normal" title="Left Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="leftDownTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ii-am-hVv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-lw-EFr">
                                 <rect key="frame" x="172" y="451" width="120" height="40"/>
@@ -50,6 +56,9 @@
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpInsideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7n-6B-QB3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvL-BY-nty">
                                 <rect key="frame" x="28.5" y="325" width="263" height="107"/>
