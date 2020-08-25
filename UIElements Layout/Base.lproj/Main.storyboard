@@ -99,12 +99,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ldi-l4-vpH">
+                                <rect key="frame" x="28.5" y="50" width="263" height="237"/>
+                                <color key="tintColor" red="0.1086835432" green="0.93534409689999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="242" id="CtM-Nz-zRU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="xYw-ZS-xUr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DvL-BY-nty" firstAttribute="top" secondItem="Ldi-l4-vpH" secondAttribute="bottom" constant="35.5" id="6GQ-IY-kAP"/>
                             <constraint firstItem="be0-D3-xw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="6JT-aT-YT2"/>
+                            <constraint firstItem="Ldi-l4-vpH" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47.5" id="6Ka-UW-H8g"/>
                             <constraint firstItem="sN8-Mp-wnX" firstAttribute="top" secondItem="DvL-BY-nty" secondAttribute="bottom" constant="19" id="6dg-he-QDj"/>
+                            <constraint firstItem="Ldi-l4-vpH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7rw-RV-Njp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oco-el-Pdt" secondAttribute="bottom" constant="20" id="BJM-Mc-xWE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ldi-l4-vpH" secondAttribute="trailing" constant="28.5" id="Dgt-gq-ghL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oco-el-Pdt" secondAttribute="trailing" constant="28" id="E8W-pD-idr"/>
                             <constraint firstItem="be0-D3-xw6" firstAttribute="height" secondItem="oco-el-Pdt" secondAttribute="height" id="GfM-Kd-6SC"/>
                             <constraint firstItem="kgN-lw-EFr" firstAttribute="width" secondItem="sN8-Mp-wnX" secondAttribute="width" id="Jqt-xB-xXu"/>
@@ -115,6 +127,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgN-lw-EFr" secondAttribute="trailing" constant="28" id="W2m-ax-dFv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="be0-D3-xw6" secondAttribute="bottom" constant="20" id="X3u-PI-6oz"/>
                             <constraint firstItem="DvL-BY-nty" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28.5" id="b3f-L5-spx"/>
+                            <constraint firstItem="Ldi-l4-vpH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28.5" id="hbo-es-hAt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DvL-BY-nty" secondAttribute="trailing" constant="28.5" id="mMC-VU-Qs9"/>
                             <constraint firstItem="be0-D3-xw6" firstAttribute="top" secondItem="sN8-Mp-wnX" secondAttribute="bottom" constant="17" id="uLB-Qd-wTt"/>
                             <constraint firstItem="oco-el-Pdt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="v7J-gq-RMV"/>
@@ -130,4 +143,7 @@
             <point key="canvasLocation" x="131.25" y="118.30985915492958"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+    </resources>
 </document>
