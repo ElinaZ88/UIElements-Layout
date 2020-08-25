@@ -26,11 +26,6 @@
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be0-D3-xw6">
                                 <rect key="frame" x="29" y="508" width="120" height="40"/>
@@ -43,28 +38,6 @@
                                 <state key="normal" title="Left Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN8-Mp-wnX">
-                                <rect key="frame" x="29" y="451" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.10868354316303919" green="0.9353440968820923" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Nr2-GH-W1P"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Pbq-sh-NvU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                <state key="normal" title="Left Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-lw-EFr">
                                 <rect key="frame" x="172" y="451" width="120" height="40"/>
@@ -77,11 +50,6 @@
                                 <state key="normal" title="Right Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvL-BY-nty">
                                 <rect key="frame" x="28.5" y="325" width="263" height="107"/>
@@ -93,11 +61,6 @@
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ldi-l4-vpH">
                                 <rect key="frame" x="28.5" y="50" width="263" height="237"/>
@@ -107,6 +70,21 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="xYw-ZS-xUr"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN8-Mp-wnX">
+                                <rect key="frame" x="29" y="451" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.10868354316303919" green="0.9353440968820923" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nr2-GH-W1P"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Pbq-sh-NvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <state key="normal" title="Left Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Fpf-um-xag"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -137,6 +115,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftButtonDown" destination="be0-D3-xw6" id="IGg-B0-x5m"/>
+                        <outlet property="leftButtonUp" destination="sN8-Mp-wnX" id="HeA-7L-T5t"/>
+                        <outlet property="mainImageView" destination="Ldi-l4-vpH" id="NgI-h8-lkc"/>
+                        <outlet property="myLabel" destination="DvL-BY-nty" id="71a-Ix-xgm"/>
+                        <outlet property="rightButtonDown" destination="oco-el-Pdt" id="ut9-no-kxl"/>
+                        <outlet property="rightButtonUp" destination="kgN-lw-EFr" id="Xja-A6-eie"/>
+                        <outletCollection property="styleOutletCollection" destination="sN8-Mp-wnX" collectionClass="NSMutableArray" id="VfN-Lz-ihV"/>
+                        <outletCollection property="styleOutletCollection" destination="kgN-lw-EFr" collectionClass="NSMutableArray" id="w4O-qm-JJ3"/>
+                        <outletCollection property="styleOutletCollection" destination="be0-D3-xw6" collectionClass="NSMutableArray" id="8ib-5a-SCl"/>
+                        <outletCollection property="styleOutletCollection" destination="oco-el-Pdt" collectionClass="NSMutableArray" id="wse-Gb-dzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
